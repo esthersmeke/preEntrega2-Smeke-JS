@@ -23,6 +23,7 @@ const promptMessage = `Select a popular restaurant chain:\n${restaurantOptions.j
 )}`;
 const selectedOption = prompt(promptMessage);
 
+// Convierto el string y empiezo desde 1 en vez de 0. Checamos que sea valido el imput
 if (selectedOption !== null && !isNaN(selectedOption)) {
   const selectedRestaurantIndex = parseInt(selectedOption, 10) - 1;
 
