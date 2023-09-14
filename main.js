@@ -3,6 +3,7 @@ function displaySelectedDish(selectedDish) {
   const selectedDishElement = document.getElementById("selectedDish");
   selectedDishElement.innerHTML = `
                 <h2>You selected: ${selectedDish.name}</h2>
+                <img src="${selectedDish.image}" alt="${selectedDish.name}">
                 <p>${selectedDish.description}</p>
                 <p>Price: $${selectedDish.price}</p>
                 <p>Calories: ${selectedDish.calories}</p>
